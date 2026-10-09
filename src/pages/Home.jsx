@@ -46,12 +46,20 @@ const Home = () => {
           </h2>
 
           <div className="flex gap-4 mt-2">
-            <button className="px-6 py-3 rounded-full bg-purple-700 hover:bg-purple-600 transition font-semibold shadow-[0_0_20px_rgba(160,32,240,0.4)]">
+            <button
+              onClick={() => navigate("/projects")}
+              className="px-6 py-3 rounded-full bg-purple-700 hover:bg-purple-600 transition font-semibold shadow-[0_0_20px_rgba(160,32,240,0.4)]"
+            >
               View Projects
             </button>
-            <button className="px-6 py-3 rounded-full border border-white/15 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition font-semibold">
+            <a
+              href="https://wa.me/918595557482?text=Hi%20Hussain%2C%20I%20saw%20your%20portfolio"
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-3 rounded-full border border-white/15 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition font-semibold"
+            >
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 
@@ -212,7 +220,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-purple-600/30 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition duration-500 -z-10"></div>
 
               <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-[0_8px_40px_rgba(0,0,0,0.5)] transition duration-300 group-hover:border-purple-500/40 group-hover:-translate-y-2">
-                <Link to='/projects/shopnest'>
+                <Link to="/projects/shopnest">
                   <img
                     className="w-full transition duration-500 group-hover:scale-105"
                     src={shopnest}
